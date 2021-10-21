@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+class ListCreator{
+ +String Title
+ +HashMap item (String description, String dueDate)
+}
+
+class EditList{
+    add()
+    remove()
+    editTitle()
+}
+
+
+@enduml
