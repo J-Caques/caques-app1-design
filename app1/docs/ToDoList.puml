@@ -1,14 +1,24 @@
 @startuml
 'https://plantuml.com/class-diagram
 class ListCreator{
- +String Title
+ -String listTitle
  +HashMap item (String description, String dueDate)
+ -getTitle
+ -setTitle
+ -createList()
+}
+
+class EditItems{
+  -additem()
+  -removeitem()
+  -changeDescription()
+  -changeDueDate()
 }
 
 class EditList{
-    add()
-    remove()
-    editTitle()
+    storeList()
+    removeList()
+    editListTitle()
 }
 
 
